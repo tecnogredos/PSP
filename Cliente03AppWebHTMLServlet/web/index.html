@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Cliente de Servicio Aplicacion Web con Html y formulario</h1>
+        
+        <form action="MiServlet" method="get">
+            Operación:
+            <select name="operacion">
+                <option value="1">Suma</option>
+                <option value="2">Resta</option>
+                <option value="3">Multiplica</option>
+                <option value="4">Divide</option>
+                <option value="5">Potencia</option>
+            </select>
+            <br>
+            Valor 1:
+            <input type="text" name="parametro1">
+            <br>
+            Valor 2:
+            <input type="text" name="parametro2">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </body>
+</html>

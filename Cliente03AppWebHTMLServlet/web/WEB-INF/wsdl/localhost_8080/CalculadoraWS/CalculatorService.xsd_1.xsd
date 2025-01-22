@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.medac.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.medac.com/">
+
+<xs:element name="divide" type="tns:divide"/>
+
+<xs:element name="divideResponse" type="tns:divideResponse"/>
+
+<xs:element name="multiplica" type="tns:multiplica"/>
+
+<xs:element name="multiplicaResponse" type="tns:multiplicaResponse"/>
+
+<xs:element name="potencia" type="tns:potencia"/>
+
+<xs:element name="potenciaResponse" type="tns:potenciaResponse"/>
+
+<xs:element name="resta" type="tns:resta"/>
+
+<xs:element name="restaResponse" type="tns:restaResponse"/>
+
+<xs:element name="suma" type="tns:suma"/>
+
+<xs:element name="sumaResponse" type="tns:sumaResponse"/>
+
+<xs:complexType name="multiplica">
+<xs:sequence>
+<xs:element name="val1" type="xs:double"/>
+<xs:element name="val2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="suma">
+<xs:sequence>
+<xs:element name="val1" type="xs:double"/>
+<xs:element name="val2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="potencia">
+<xs:sequence>
+<xs:element name="base" type="xs:double"/>
+<xs:element name="exponente" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="potenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divide">
+<xs:sequence>
+<xs:element name="val1" type="xs:double"/>
+<xs:element name="val2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divideResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resta">
+<xs:sequence>
+<xs:element name="val1" type="xs:double"/>
+<xs:element name="val2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
