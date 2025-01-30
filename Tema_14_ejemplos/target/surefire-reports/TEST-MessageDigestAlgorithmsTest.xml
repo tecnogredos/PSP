@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MessageDigestAlgorithmsTest" time="0.083" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos\target\test-classes;C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos\target\classes;C:\Users\aWa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\aWa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\aWa\AppData\Local\Temp\surefire6521439777509207808\surefirebooter-20250130194149365_3.jar C:\Users\aWa\AppData\Local\Temp\surefire6521439777509207808 2025-01-30T19-41-49_242-jvmRun1 surefire-20250130194149365_1tmp surefire_0-20250130194149365_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="MessageDigestAlgorithmsTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos\target\test-classes;C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos\target\classes;C:\Users\aWa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\aWa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\aWa"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\aWa\AppData\Local\Temp\surefire6521439777509207808\surefirebooter-20250130194149365_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="aWa"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-21\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\aWa\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\aWa\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="C:\Users\aWa\Documents\NetBeansProjects\Tema_14_ejemplos"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-22\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\MEDAC\Documents\vim910\Vim\vim91;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\aWa\AppData\Local\Microsoft\WindowsApps;C:\tools\neovim\nvim-win64\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.1.1\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="test_Hash_SHA_256" classname="MessageDigestAlgorithmsTest" time="0.027">
+    <system-out><![CDATA[Resumen HASH con algortimo [SHA-256] --> E633F4FC79BADEA1DC5DB970CF397C8248BAC47CC3ACF9915BA60B5D76B0E88F --> Hola
+Resumen HASH con algortimo [SHA-256] --> D6098752433B086904062FF44C8424DC934C2960285A17AEB78E351BA561C2CF --> HolA
+]]></system-out>
+  </testcase>
+  <testcase name="test_Hash_SHA_512" classname="MessageDigestAlgorithmsTest" time="0.001">
+    <system-out><![CDATA[Resumen HASH con algortimo [SHA-512] --> C096860BE238D7E0A6D3929C7BA06F468D3E6B7B28132BA48D553F845788C513004B1EC78758F24E9E1F006AE9A89651F80023F5505927A7AECD6529FA12C081 --> Hola
+Resumen HASH con algortimo [SHA-512] --> 26C181EE1F04D6258B7320D8E20FDAB749043F35D79DE52F96DF94FA4788AB5E9C391C54E0FBC36E1424776A631DDF61D9EDE78DDCC4D66CCFE8840F67842B96 --> HolA
+]]></system-out>
+  </testcase>
+  <testcase name="test_Hash_MD2" classname="MessageDigestAlgorithmsTest" time="0.0">
+    <system-out><![CDATA[Resumen HASH con algortimo [MD2] --> 487FB4C94C12519CE4782406147FFE60 --> Hola
+Resumen HASH con algortimo [MD2] --> E4823381681A52B8E8F52986A7302577 --> HolA
+]]></system-out>
+  </testcase>
+  <testcase name="test_Hash_MD5" classname="MessageDigestAlgorithmsTest" time="0.0">
+    <system-out><![CDATA[Resumen HASH con algortimo [MD5] --> F688AE26E9CFA3BA6235477831D5122E --> Hola
+Resumen HASH con algortimo [MD5] --> D4FA99092B02AA32703BB8DAB17B9DA9 --> HolA
+]]></system-out>
+  </testcase>
+  <testcase name="test_Hash_SHA_1" classname="MessageDigestAlgorithmsTest" time="0.001">
+    <system-out><![CDATA[Resumen HASH con algortimo [SHA-1] --> 4E46DC0969E6621F2D61D2228E3CD91B75CD9EDC --> Hola
+Resumen HASH con algortimo [SHA-1] --> 10595889249D783A16775909DC788DF6261C58EF --> HolA
+]]></system-out>
+  </testcase>
+</testsuite>
