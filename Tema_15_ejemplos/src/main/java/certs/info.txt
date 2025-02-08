@@ -1,0 +1,29 @@
+//Creación de certificados
+//(https://chuidiang.org/index.php?title=Socket_SSL_con_Java)
+
+//Paso 1:
+//Crear certificado del servidor
+//Se genera el fichero serverKey.jks, que es un almacén de certificados y dentro tiene el certificado de nuestro servidor. 
+keytool -genkey -keyalg RSA -alias serverKey -keystore serverKey.jks -storepass servpass
+
+//Crear certificado del cliente
+//Deberíamos hacer ahora lo mismo para generar un certificado de cliente en un almacén distinto (con otro nombre).
+keytool -genkey -keyalg RSA -alias clientKey -keystore clientKey.jks -storepass clientpass
+
+//Paso 2:
+//Vamos a generar el almacén de confianza para el cliente.
+//Este almacen debe contener el certificado de servidor. 
+//Como el certificado del servidor está dentro de un almacén, tenemos que sacarlo de ahí a un fichero. 
+keytool -export -keystore serverKey.jks -alias serverKey -file ServerPublicKey.cer
+
+//Una vez que tenemos el fichero ServerPublicKey.cer con el certificado, debemos meterlo dentro de un 
+//almacén de certificados de confianza del cliente. 
+keytool -import -alias serverKey -file ServerPublicKey.cer -keystore clientTrustedCerts.jks -keypass clientpass -storepass clientpass
+
+//ya tenemos el almacén de certificados de confianza clientTrustedCerts.jks
+
+// repetir todo el proceso para crear el almacén de certificados de confianza para el servidor, metiendo en él el certificado del cliente
+Comando 1:
+keytool -export -keystore clientKey.jks -alias clientKey -file ClientPublicKey.cer
+Comando 2:
+keytool -import -alias clientKey -file ClientPublicKey.cer -keystore serverTrustedCerts.jks -keypass serverpass -storepass serverpass
